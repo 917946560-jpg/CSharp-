@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6_转义字符", "Les
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson6_练习题", "Lesson6_练习题\Lesson6_练习题.csproj", "{31EAB64A-4F1F-4CE3-944D-4554948CFEF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson7_类型转换（隐式转换）", "Lesson7_类型转换（隐式转换）\Lesson7_类型转换（隐式转换）.csproj", "{261C4ED0-9069-4387-89E2-F22996AB3F0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{31EAB64A-4F1F-4CE3-944D-4554948CFEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31EAB64A-4F1F-4CE3-944D-4554948CFEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31EAB64A-4F1F-4CE3-944D-4554948CFEF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261C4ED0-9069-4387-89E2-F22996AB3F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261C4ED0-9069-4387-89E2-F22996AB3F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261C4ED0-9069-4387-89E2-F22996AB3F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261C4ED0-9069-4387-89E2-F22996AB3F0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
