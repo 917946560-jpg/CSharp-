@@ -5,3 +5,5 @@
 *.user
 bin/
 obj/
+DailyLogs/2026-03-12_隐式转换日志.md
+/DailyLogs
