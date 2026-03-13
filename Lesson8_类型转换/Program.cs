@@ -52,7 +52,7 @@ Console.WriteLine(i2);
 //char和数值类型
 i2 = 'A';
 
-char c =（char）i2;
+char c =(char)i2;
 Console.WriteLine(c);
 //bool和string 是不能够通过 括号强转的
 
