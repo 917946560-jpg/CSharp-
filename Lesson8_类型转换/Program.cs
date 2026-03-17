@@ -58,17 +58,74 @@ Console.WriteLine(c);
 
 //bool bo= true;
 //int i3 =(bool)bo;
-//string str= "123";
+//string str= "123";    
 //i3 =(int)str;
 
 
 #endregion
 
 #region 知识点二 Parse法
+// 作用把字符串类型转换为对应的类型
+//语法：变量类型.Parse（"字符串"）
+//注意：字符串必须能够转换成对应类型 否则报错
+
+//有符号
+//string str2 = "123";
+int i4 = int.Parse("123");
+Console.WriteLine(i4);
+// 我们填写字符串 必须是要能够转成对应类型的字符 如果不符合规则 会报错
+//int i4 = int.Parse("123.45");
+//Console.WriteLine(i4);
+//范围必须是能被变量存储的值 否则报错
+//short s3 = short.Parse("40000");
+//Console.WriteLine(s3);
+
+sbyte sb3 = sbyte.Parse("1");
+Console.WriteLine(sb3);
+//他们意思是相同的
+Console.WriteLine(sbyte.Parse("1"));
+Console.WriteLine(long.Parse("123123"));
+//无符号
+Console.WriteLine(byte.Parse("1"));
+Console.WriteLine(ushort.Parse("1"));
+Console.WriteLine(ulong.Parse("1"));
+Console.WriteLine(uint.Parse("1"));
+
+//浮点数
+float f3 = float.Parse("1.2323");
+double d3 = double.Parse("1.2323");
+
+//特殊类型
+bool b5 = bool.Parse("true");
+Console.WriteLine(b5);
+
+char c2 = char.Parse("A");
+Console.WriteLine(c2);
 
 #endregion
 
 #region 知识点三 Convert法
+// 作用 更准确的将 各个类型之间进行相互转换
+//语法：Convert.Tom日标类型（变量或常量）
+//注意：填写的变量或常量必须正确 否则出错
+
+//转字符串 如果是把字符串转对应类型 那字符串一定要合法合规
+int a = Convert.ToInt32("12");
+Console.WriteLine(a);
+a = Convert.ToInt32(1.65845f);
+
+a = Convert.ToInt32(true);
+Console.WriteLine(a);
+a = Convert.ToInt32(false);
+Console.WriteLine(a);
+
+
+//精度更准确
+
+//特殊类型转换
+
+//每一个类型都存在对应的Convert中的方法
+
 
 #endregion
 
