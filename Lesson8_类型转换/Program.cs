@@ -112,23 +112,61 @@ Console.WriteLine(c2);
 //转字符串 如果是把字符串转对应类型 那字符串一定要合法合规
 int a = Convert.ToInt32("12");
 Console.WriteLine(a);
-a = Convert.ToInt32(1.65845f);
 
+//精度更准确
+//精度比括号强转好一点，会四舍五入
+a = Convert.ToInt32(1.65845f);
+Console.WriteLine(a);
+
+//特殊类型转换
+//把bool类型也可以转成 数值类型 true1 false0
 a = Convert.ToInt32(true);
 Console.WriteLine(a);
 a = Convert.ToInt32(false);
 Console.WriteLine(a);
 
-
-//精度更准确
-
-//特殊类型转换
+a = Convert.ToInt32('A');
+Console.WriteLine(a);
 
 //每一个类型都存在对应的Convert中的方法
+sbyte sb5 = Convert.ToSByte("1");
+short s5 = Convert.ToInt16("1");
+int i5 = Convert.ToInt32("1");
+long l5 = Convert.ToInt64("1");
+
+byte b6 = Convert.ToByte("1");
+ushort us5 = Convert.ToUInt16("1");
+uint ui5 = Convert.ToUInt32("1");
+ulong ul5 = Convert.ToUInt64("1");
+
+float f5 = Convert.ToSingle("13.2");
+double d5 = Convert.ToDouble("13.2");
+decimal de5 = Convert.ToDecimal("13.2");
+
+bool bo5 = Convert.ToBoolean("true");
+char c5= Convert.ToChar("A");
+string str5 = Convert.ToString(123123);
 
 
 #endregion
 
 #region 知识点四 其它类型转string
+//作用：拼接打印
+//语法：变量.toString();
+
+string str6 = 1.ToString();
+str6 = true.ToString();
+str6 = 'A'.ToString();
+str6 = 1.2f.ToString();
+
+int aa = 1;
+str6 = aa.ToString();
+bool bo6 = true;
+str6 = bo6.ToString();
+
+//当我们进行字符串拼接时 就会自动调用 tostring 转成 string
+Console.WriteLine("123123" + 1 + true);
+
+str6 = "123123" + 1 + true + 1.23;
 
 #endregion
